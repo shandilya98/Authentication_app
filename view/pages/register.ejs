@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+<h1 style.backgroundColor:"light-blue"> Sign Up </h1>
+<form action="/register" method="POST">
+    <label for="username">UserName</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="Email Address">Email Address</label>
+    <input type="text" placeholder="name@gmail.com" id="xyz" name="Email Address">
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password"><br>
+    <label for="phone">Mobile No:-</label><br>
+    <input type="text" name="phone" id="phone"><br>
+    <button>Submit</button>
+</form>
+<ul>
+    <li>Already a registered user<a href="/login">login</a></li>
+</ul>
+</body>
+</html>

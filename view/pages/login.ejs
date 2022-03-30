@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('./partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1 font-size = "100px", text-align="center"> Log in </h1>
+
+
+    <form action="/login" method="POST">
+        <label for="Email Address">Email Address</label>
+        <input type="text" placeholder="name@gmail.com" id="xyz" name="Email Address">
+        <label for="password">Password</label>
+        <input type="password"  placeholder = "Enter your password" id="password" name="password">
+        <button>Login</button>
+    </form>
+    
+    <p>Don't have an account? <a href="/register">SignUp</a></p>
+  </div>
+</main>
+</body>
+</html>
